@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff7e6;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffd700;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 10px;
+}
+
+.nav-list a {
+  color: #bd7c04;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.nav-list a:hover {
+  background-color: #a75509;
+  color: #ff4400;
+  text-decoration: none;
+}
+
+#welcome-section {
+  margin-top: 60px; 
+  text-align: center;
+  padding: 50px;
+  background-color: #ffeb99;
+  font-family: "Dosis";
+}
+
+#projects {
+  padding: 50px;
+  background-color: #fff3b0;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffd700;
+  color: #bd7c04;
+}
+
+a {
+  color: #be3807;
+}
+
+h2 {
+  font-family: "Titillium Web";
+}
+
+code{
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: row;
+  }
+  .project {
+    width: 100%;
+  }
+}

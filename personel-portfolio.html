@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">My Projects</a></li>
+    </ul>
+  </nav>
+  
+  <section id="welcome-section">
+    <h1>HI EVERYONE, I'M EYÜP</h1>
+    <h3>a web developer (trying to be one ;d)</h3>
+  </section>
+  
+  <section id="projects">
+    <div class="project-tile">
+      <div class="project">
+        <h2>This was my first pyautogui project:</h2>
+        <pre><code>import pyautogui
+import time
+
+time.sleep(5)
+
+x, y = 1285, 637
+
+pyautogui.click(x, y)
+
+metin = "Hello World!"
+
+pyautogui.typewrite(metin, interval=0.1)
+
+time.sleep(2)
+
+pyautogui.scroll(-500)
+        </code></pre>
+      </div>
+      <div class="project">
+        <h2>This was my first pandas project, analyzing NBA data:</h2>
+        <pre><code>import pandas as pd
+
+df = pd.read_csv('player_data.csv')
+
+yil_filtre = (df['year_start'] >= 1950)<br> & (df['year_start'] <= 1960)
+yil_arasi_oyuncular = df[yil_filtre]
+
+isim_ve_uni = yil_arasi_oyuncular[['name',<br> 'college']]
+
+print("Players that started in 1950-1960<br> and collages they graduated:")
+print(isim_ve_uni)
+        </code></pre>
+      </div>
+      <div class="project">
+        <h2>My favorite freeCodeCamp certification project:</h2>
+        <h3><a href="https://www.freecodecamp.org/fcca27005c1-8abe-471c-9cf1-11c4b1b3493a" target="_blank">Hugh Laurie Tribute Page</a></h3>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="contact">
+    <p>You can contact me at this email: <a href="mailto:eyupc5118@gmail.com">eyupc5118@gmail.com</a></p>
+    <p>My freeCodeCamp profile link is <a id="profile-link" target="_blank" href="https://www.freecodecamp.org/fcca27005c1-8abe-471c-9cf1-11c4b1b3493a">here</a></p>
+  </footer>
+</body>
+</html>
